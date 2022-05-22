@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preload" href="styles.css" as="style">
+    <title>Booking Page</title>
+</head>
+<body>
+    <!-- Scroll menu -->
+    <div>
+        <div class="container">
+            <p class="title">Portland, Maine</p>
+            <img src="/Assets_Imgs/svgs/Logo.svg" alt="Logo" class="logo">
+        </div>
+        <section class="carousel carouselBody" aria-label="Gallery">
+            <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper">
+                <a href="#carousel__slide4"
+                    class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                    class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1"
+                class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2"
+                class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3"
+                class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1"
+                class="carousel__next">Go to first slide</a>
+            </li>
+            </ol>
+        </section>
+
+               <!-- menu -->
+            <div>
+                <input id="booking__toggle" type="checkbox"/>
+                <label class="booking__btn" for="booking__toggle">
+                  book now
+                </label>
+            
+                <div class="booking__box">
+                    <h1 class="titleBooking">Book now</h1>
+                    <div class="booking__item"> 
+                        <label>arrival date</label>
+                        <input type="date" class="date" required>
+                    </div>
+                    <div class="booking__item">  
+                        <label>departure date</label>
+                        <input type="date" class="date" required>
+                    </div>
+                    <div class="booking__item"> 
+                        <label>guest</label>
+                        <div class="guestCont">
+                            <input type="number" placeholder="adults"class="date guest" required>
+                            <input type="number" placeholder="child" class="date guest" required>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="info">GET READY! You are about to get our best price. Gauranteed</h3>
+                        <button class="btnBooking" type="submit">let's go</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo menu -->
+
+        <div class="secContainer">
+            <div class="subCont">
+                <h1 class="titleSecCont">History in the making</h1>
+                <h2 class="subSecCont">Portland's newest boutique hotel</h2>
+                <p  class="pSecCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, error earum. Vero laborum suscipit ipsam voluptatem voluptate, vel soluta ipsum fugit, doloribus pariatur dignissimos tempora sed, magnam nihil qui et. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis ab tempora, minima atque numquam nihil delectus dolorum quidem ea laborum natus aperiam earum quas molestias sed nulla repudiandae eaque?
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Tercer menu -->
+
+        <div class="thirdContainer">
+            <div class="subTCont">
+                <h1 class="titleTC">Accommodations</h1>
+                <h2 class="subTitleTC">Hollywood, meet industrial chic</h2>
+                <p style="letter-spacing: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quam? Nesciunt voluptas tempora, assumenda, veniam enim quasi consequatur, qui expedita quis nihil magnam nobis dolor laudantium consequuntur provident nulla deleniti.</p>
+                <button class="btnView shadow edge front">view rooms</button>
+            </div>
+            <div class="imgTCont" >
+                <img src="/Assets_Imgs/Room.jpg" alt="Room" style="width: 34em;">
+            </div>
+        </div>
+
+        <!-- Cuarto menu -->
+
+        <div>
+            <h1 class="titleFCont">this month's most anticipated events</h1>
+            <div class="fourthContainer">
+                    <div>
+                        <h1 class="day">8</h1> 
+                        <h2 class="month">Nov</h2> 
+                        <img src="/Assets_Imgs/event1.jpg" alt="primer evento">
+                    </div> 
+                    <div>
+                        <h1 class="day day_sec">16</h1> 
+                        <h2 class="month">Nov</h2> 
+                        <img src="/Assets_Imgs/event2.jpg" alt="segundo evento">
+                    </div>  
+                    <div>
+                        <h1 class="day">2</h1> 
+                        <h2 class="month">Nov</h2> 
+                        <img src="/Assets_Imgs/event3.jpg" alt="segundo evento">
+                    </div> 
+                    <div>
+                        <h1 class="day">3</h1> 
+                        <h2 class="month">Nov</h2> 
+                        <img src="/Assets_Imgs/event4.jpg" alt="segundo evento">
+                    </div>    
+            </div>
+        </div>
+
+        <footer>
+            <h3>390 Congress St.(at Congress & Exchange Streets, Portland, Maine MAP></h3>
+            <h3>(207)653.9990 info@portlandpresshotel.com</h3>
+        </footer>
+</body>
+</html>
